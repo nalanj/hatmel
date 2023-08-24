@@ -92,7 +92,3 @@ with caution.
   <summary>What is a hatmel?</summary>
   This is Hat Mel 🤠.
 </details>
-
-## License
-
-MIT. See LICENSE for details
