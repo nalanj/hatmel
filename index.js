@@ -23,6 +23,10 @@ export function html(strings, ...keys) {
   return unsafe(result.join(""));
 }
 
+html.map = async (entries, render) => {
+  return Promise.all(entries.map((entry) => render(entry)));
+};
+
 function render(toRender) {
   if (toRender === undefined || toRender === null || toRender === false) {
     return "";
