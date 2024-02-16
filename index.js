@@ -25,7 +25,7 @@ export function html(strings, ...keys) {
 
 html.map = async (entries, render) => {
   if (entries?.map) {
-    return Promise.all(entries.map((entry) => render(entry)));
+    return Promise.all(entries.map((entry, i) => render(entry, i)));
   } else if (entries) {
     return await render(entries);
   } else {
