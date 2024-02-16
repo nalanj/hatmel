@@ -24,7 +24,13 @@ export function html(strings, ...keys) {
 }
 
 html.map = async (entries, render) => {
-  return Promise.all(entries.map((entry) => render(entry)));
+  if (entries?.map) {
+    return Promise.all(entries.map((entry) => render(entry)));
+  } else if (entries) {
+    return await render(entries);
+  } else {
+    return "";
+  }
 };
 
 function render(toRender) {
