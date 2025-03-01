@@ -88,7 +88,6 @@ with caution.
   No. lit-html processes templates a good bit more to enable updating them. Hatmel is drastically less intelligent, and just renders strings.
 </details>
 
-<details>
-  <summary>What is a hatmel?</summary>
-  This is Hat Mel 🤠.
-</details>
+## License
+
+MIT. See [LICENSE](/LICENSE) for more information.
