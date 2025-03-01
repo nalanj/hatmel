@@ -1,10 +1,13 @@
 {
-	"name": "@with-cardinal/hatmel",
+	"name": "@nalanj/hatmel",
 	"type": "module",
 	"version": "0.0.0",
 	"main": "index.js",
-	"devDependencies": {},
 	"volta": {
-		"extends": "../../package.json"
+		"node": "22.14.0"
+	},
+	"files": ["index.js", "unsafe.js"],
+	"scripts": {
+		"test": "node --test --enable-source-maps"
 	}
 }
