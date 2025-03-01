@@ -8,6 +8,11 @@
 	},
 	"files": ["index.js", "unsafe.js"],
 	"scripts": {
+		"lint": "biome check",
+		"fix": "biome check --write",
 		"test": "node --test --enable-source-maps"
+	},
+	"dependencies": {
+		"@biomejs/biome": "1.9.4"
 	}
 }
