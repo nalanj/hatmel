@@ -1,0 +1,10 @@
+{
+	"name": "@with-cardinal/hatmel",
+	"type": "module",
+	"version": "0.0.0",
+	"main": "index.js",
+	"devDependencies": {},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

@@ -1,0 +1,17 @@
+# https://taskfile.dev
+version: "3"
+
+tasks:
+  test:
+    desc: Run all tests
+    deps:
+      - test:unit
+
+  test:unit:
+    desc: Run unit tests
+    deps:
+      - :npm:install
+    cmds:
+      - node --test --enable-source-maps {{.CLI_ARGS}}
+    env:
+      NODE_ENV: test
